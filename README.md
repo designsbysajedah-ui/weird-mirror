@@ -1,2 +1,3 @@
 # weird-mirror
-project for ixd415
+project for ixd415 hello
+
