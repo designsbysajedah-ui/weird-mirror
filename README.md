@@ -74,3 +74,19 @@ off the repo. They live on the build machine.
 
 Calibration numbers in these docs are **specific to the room they were measured in** and must be
 re-measured on site. That's a build step, not a formality.
+
+---
+
+## Images
+
+| | |
+|---|---|
+| ![Output](docs/images/output-crystal.png) | ![Network](docs/images/network-crystal-2026-09-16.png) |
+| Variant C output — the crystal as a bloomed point cloud with chromatic fringing | The `/project1` network, Sept 16. `dot_thresh` white and `drift` bypassed is the particle chain mid-tuning |
+| ![Geometry](docs/images/stage-geometry.png) | ![Particles](docs/images/stage-particles.png) |
+| `form_render` — the raw geometry before any of the look | `dots` — the particle layer, noise thresholded against the body |
+
+![Sketchbook](docs/images/sketchbook-atlas9-notes-2026-09-14.jpg)
+
+Notes from ATLAS9, Sept 14 — the second brain dump is where the spirit concept and the
+slide-the-scene-onto-the-wall idea were first drawn side by side. The spirit one won.
