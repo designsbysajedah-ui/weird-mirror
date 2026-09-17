@@ -427,3 +427,39 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# ---------------------------------------------------------------
+# TouchDesigner / IXD 415
+# ---------------------------------------------------------------
+
+# Project files — large and binary, kept off the repo on purpose
+*.toe
+*.toe.*
+*.tox
+
+# TouchDesigner backups and crash dumps
+Backup/
+*.dmp
+*.crash
+
+# MediaPipe plugin (172MB engine — reference it locally, don't commit it)
+mediapipe-touchdesigner/
+mediapipe-touchdesigner*.zip
+
+# TouchDesigner MCP server
+touchdesigner-mcp-td/
+*.mcpb
+
+# Media assets — keep source models and captures out of the repo
+*.glb
+*.gltf
+*.fbx
+*.usdz
+*.mov
+*.mp4
+
+# macOS
+.DS_Store
+
+# The VisualStudio template above ignores [Bb]uild[Ll]og.* — this one is a deliverable
+!BUILDLOG.md
