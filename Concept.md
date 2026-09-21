@@ -80,3 +80,10 @@ gets.
 Technically it's the cheapest thing on this list — a feedback loop that never fully decays — but the
 meaning accumulates on its own: the first person of the day is alone, and the last person is standing
 in a room full of the people they missed.
+
+
+# Examples
+
+https://www.youtube.com/watch?v=uP1emkHLoTM&pp=ygUWdG91Y2hkZXNpZ25lciBleGFtcGxlcw%3D%3D 
+
+https://www.instagram.com/reels/DP_fNCJjC05/
