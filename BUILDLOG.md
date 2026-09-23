@@ -219,4 +219,4 @@ The ramp phase runs on `absTime.seconds * 0.04`, so the colour drifts on its own
 25 seconds, with or without anyone in frame. Two people a minute apart get different colours.
 
 **Still open:** nothing has been measured in the classroom, and the calibration is room-specific. And
-I still have to decide whether this file or the crystal is the one being demoed.
+I still have to decide whether this file or the crystal is what I would like to continue working on. And over the weekend I would like to try out the changing seasons idea, but to be continued!
