@@ -463,3 +463,6 @@ touchdesigner-mcp-td/
 
 # The VisualStudio template above ignores [Bb]uild[Ll]og.* — this one is a deliverable
 !BUILDLOG.md
+
+# Instructor asked for the working project file in the repo (Sept 23 2026)
+!Projectixd415.22.toe
