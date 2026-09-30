@@ -220,3 +220,48 @@ The ramp phase runs on `absTime.seconds * 0.04`, so the colour drifts on its own
 
 **Still open:** nothing has been measured in the classroom, and the calibration is room-specific. And
 I still have to decide whether this file or the crystal is what I would like to continue working on. And over the weekend I would like to try out the changing seasons idea, but to be continued!
+
+
+---
+
+## Sept 28–29 — Pivot to a 3D model
+
+**What I asked for:** make the rainbow piece more ethereal. Then I brought in a 3D model
+(*Evanescent Plasma*, a Sketchfab .glb) and got more interested in exploring it than in my own
+silhouette, so I pivoted: dropped the body/shadow layer completely and put the camera *inside* the
+model so it feels like an environment you move through, not an object you look at.
+
+**What Claude did:** loaded the .glb, turned off six invisible helper cubes that TouchDesigner was
+drawing as a flat grey wall, and made the rings glow instead of reflect. Then built the look off a
+reference image I shared: pastel colour, a zoom-smear feedback trail, chromatic fringing, haze and
+grain. The first pass was the one I liked. Every "improvement" after it washed it out, so we went
+back to it.
+
+**Hand controls.** Brought MediaPipe back in (gestures only, 640x360, same fix as Sept 16). What it
+ended up as:
+
+- Open palm, side to side: rotates the model, and a flick keeps it spinning
+- Two hands: stretch apart to zoom in, bring together to zoom out
+- Pinch + wrist twist: shifts the colours
+- Fist: warp burst
+- No hands: everything freezes
+
+**Getting there took a lot of tweaking:**
+
+- **Speed, again and again.** Every first guess was too fast. Same lesson as the crystal: start slow.
+- **It moved every time a hand came into frame.** Two causes. The model's built-in animation was set
+  to resume when a hand appeared, and the tracker's first few frames of a new hand jump around.
+  Fixed with a short settle-in delay, ignoring big single-frame jumps, and making a gesture hold a
+  few frames before it counts.
+- **Gestures that didn't make sense got swapped.** A quick pinch to toggle zoom was unreliable.
+  Two-hand zoom felt right but wouldn't zoom out: the tracker loses a hand when they get close, and
+  every time it found it again the zoom reset its starting point, so it only ever ratcheted in. Now
+  the distance between hands maps straight to depth. Open palm started as a slow look-around, but
+  side to side read more naturally as *rotating the thing*.
+
+**Honest concern:** I don't think someone walking up would know what to do. None of these gestures
+are discoverable. You have to be told. The reference works I liked (Sept 14) all teach their rule in
+a few seconds without labels, and this doesn't yet. That's the next problem to solve: some kind of
+on-screen hint, an idle state that invites a hand, or fewer gestures.
+
+*Model credit: "Evanescent Plasma" by Tycho Magnetic Anomaly, Sketchfab, CC-BY 4.0.*
