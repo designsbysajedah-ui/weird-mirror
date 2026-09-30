@@ -262,6 +262,6 @@ ended up as:
 **Honest concern:** I don't think someone walking up would know what to do. None of these gestures
 are discoverable. You have to be told. The reference works I liked (Sept 14) all teach their rule in
 a few seconds without labels, and this doesn't yet. That's the next problem to solve: some kind of
-on-screen hint, an idle state that invites a hand, or fewer gestures.
+on-screen hint, an idle state that invites a hand, or fewer gestures. Hopefully I can get some feedback from class to see what's next.
 
 *Model credit: "Evanescent Plasma" by Tycho Magnetic Anomaly, Sketchfab, CC-BY 4.0.*
