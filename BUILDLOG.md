@@ -310,6 +310,3 @@ All 21 landmarks are already in `normalized_data`, so it's a few lines in the st
 
 Calibrating on one hand and assuming it generalizes is exactly how this kind of bug survives to a
 demo. It only showed up because other people touched it.
-
-The 20 minutes of strumming is the other result, and it's the one that matters for the piece: the
-sound Matt suggested is what they stayed for, not the visuals.
