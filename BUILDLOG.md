@@ -265,3 +265,51 @@ a few seconds without labels, and this doesn't yet. That's the next problem to s
 on-screen hint, an idle state that invites a hand, or fewer gestures. Hopefully I can get some feedback from class to see what's next.
 
 *Model credit: "Evanescent Plasma" by Tycho Magnetic Anomaly, Sketchfab, CC-BY 4.0.*
+
+---
+
+## Oct 1 — Added sound
+
+When I presented in class I got some ideas from Matt saying that it would be a good idea to add sound
+or some noises seeming like the user is plucking the strings of the 3D object, so I included some
+sounds. It tends to get annoying over time so I might change it to sound more dreamy. I will know
+more when I get my user testing done.
+
+---
+
+## Oct 4 — User testing
+
+I tested a few of my friends and a random person. My friends had never seen it before and they kept
+playing with it. It wasn't working sometimes which was weird. It doesn't seem to register some of
+them? It seemed like the people with longer fingers had the most problems, which was weird — I don't
+know what that's about.
+
+But interaction-wise, they were playing with it a lot longer than I was expecting, comparing it to
+feeling like Tony Stark with Jarvis. They played with it for more than 20 minutes, strumming the
+strings more than anything. Next thing is I have to try out having a broader sizing for fingertips.
+
+![User testing the plasma piece](docs/images/user-testing-plasma-2026-10-04.png)
+
+### What Claude worked out about the finger thing
+
+The pinch threshold is an absolute number, not a relative one. MediaPipe reports the thumb-to-index
+distance normalized to the *image*, not to the hand. I calibrated it on my own hand back on Sept 16 —
+firm pinch 0.012, loose pinch 0.067 — and set `PINCH_ON` at 0.07. My own loose pinch cleared the
+threshold by three thousandths. Anyone whose hand is bigger in frame than mine was never going to
+make it: their pinch lands around 0.10 and the piece never sees it. Camera distance does the same
+thing — stand closer and your hand is larger in frame and harder to register.
+
+It also explains why only pinch broke. Open palm and fist come from MediaPipe's own trained
+classifier, which is already hand-size invariant. The one gesture I wrote by hand is the one that
+only worked for me.
+
+**The fix:** divide the pinch distance by a reference length on the same hand — wrist to index
+knuckle — so the test becomes "fingertips are within X% of hand length" instead of a fixed number.
+That's invariant across both hand size and camera distance, which is the broader sizing I was after.
+All 21 landmarks are already in `normalized_data`, so it's a few lines in the state machine.
+
+Calibrating on one hand and assuming it generalizes is exactly how this kind of bug survives to a
+demo. It only showed up because other people touched it.
+
+The 20 minutes of strumming is the other result, and it's the one that matters for the piece: the
+sound Matt suggested is what they stayed for, not the visuals.
