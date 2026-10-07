@@ -306,3 +306,7 @@ demo. It only showed up because other people touched it.
 
 The 20 minutes of strumming is the other result, and it's the one that matters for the piece: the
 sound Matt suggested is what they stayed for, not the visuals.
+
+### Touch Designer Final Documentation video 
+
+https://vimeo.com/1233891417?share=copy&fl=sv&fe=ci
