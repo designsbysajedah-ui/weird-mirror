@@ -266,18 +266,11 @@ on-screen hint, an idle state that invites a hand, or fewer gestures. Hopefully 
 
 *Model credit: "Evanescent Plasma" by Tycho Magnetic Anomaly, Sketchfab, CC-BY 4.0.*
 
----
+## Oct 1st — Added sound
 
-## Oct 1 — Added sound
+So when I presented in class I got some ideas from Matt saying that It would be a good idea to add sound or some noises seeming like the user is plucking the strings of the 3D object, so I included some sounds (it tends to get annoying overtime so I might change it to sound more dreamy). I will know more when I get my user testing done.
 
-When I presented in class I got some ideas from Matt saying that it would be a good idea to add sound
-or some noises seeming like the user is plucking the strings of the 3D object, so I included some
-sounds. It tends to get annoying over time so I might change it to sound more dreamy. I will know
-more when I get my user testing done.
-
----
-
-## Oct 4 — User testing
+## Oct 4th - User Testing
 
 I tested a few of my friends and a random person. My friends had never seen it before and they kept
 playing with it. It wasn't working sometimes which was weird. It doesn't seem to register some of
@@ -310,3 +303,6 @@ All 21 landmarks are already in `normalized_data`, so it's a few lines in the st
 
 Calibrating on one hand and assuming it generalizes is exactly how this kind of bug survives to a
 demo. It only showed up because other people touched it.
+
+The 20 minutes of strumming is the other result, and it's the one that matters for the piece: the
+sound Matt suggested is what they stayed for, not the visuals.
