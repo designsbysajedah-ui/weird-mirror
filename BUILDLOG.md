@@ -304,9 +304,13 @@ All 21 landmarks are already in `normalized_data`, so it's a few lines in the st
 Calibrating on one hand and assuming it generalizes is exactly how this kind of bug survives to a
 demo. It only showed up because other people touched it.
 
-The 20 minutes of strumming is the other result, and it's the one that matters for the piece: the
-sound Matt suggested is what they stayed for, not the visuals.
 
 ### Touch Designer Final Documentation video 
 
 https://vimeo.com/1233891417?share=copy&fl=sv&fe=ci
+
+### Aftermath / Reflection
+
+Aftermath: Even if the user doesn't find out that the orb is interactive, they still understand that it's something that is used with your hands and they are able to play and strum the music with their fingers.
+
+Reflection: I made honestly this project was a really cool way of learning TouchDesigner, I learned many things and made tons more than just this project. I ended up also using MediaPipe to make another game that went over the history of the Algerian Jerseys overtime from the 80s through the present, and shares information about what was going in Algeria around that time. But all in all, it's been super awesome and I'm glad we did this project! 
